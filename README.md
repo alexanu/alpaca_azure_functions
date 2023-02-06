@@ -14,6 +14,7 @@
 
 ## Create and deploy Azure function
 Go to the folder you have the python script
+
     az login
     func init BuyRandomETF --python  #### this creates are sub-folder with some files
     cd BuyRandomETF
@@ -71,31 +72,35 @@ Go to the folder you have the python script
     0 0 0 * * 6,0	every saturday and sunday
     0 0 0 1-7 * SUN	every first sunday of the month at 00:00:00
 
-# Git
+## Git
 
-## init
-  git init
-  git add .
-  git commit -m "initial commit"
+Init
 
-  git remote add origin https...
-  git branch -M main
-  git push -u origin main
+    git init
+    git add .
+    git commit -m "initial commit"
 
-## maintain
-  git add -A
-  git commit -m "Update"
-  git push
+    git remote add origin https...
+    git branch -M main
+    git push -u origin main
 
-## update local content from Github: 
-  git pull origin main
+Maintain
+
+    git add -A
+    git commit -m "Update"
+    git push
+
+Update local content from Github: 
+
+    git pull origin main
 
 
-# Conda Virtual Environments for Windows:
-  conda env list 
-  conda create -n alpaca_env 
-  conda install -n alpaca_env python #### or: conda install pip
-  conda activate alpaca_env
-  pip install -r requirements.txt
-  conda deactivate
-  conda env remove -n alpaca_env
+## Conda Virtual Environments for Windows:
+
+    conda env list 
+    conda create -n alpaca_env 
+    conda install -n alpaca_env python #### or: conda install pip
+    conda activate alpaca_env
+    pip install -r requirements.txt
+    conda deactivate
+    conda env remove -n alpaca_env
